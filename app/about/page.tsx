@@ -78,19 +78,19 @@ export default function AboutPage() {
       name: "Emeka (Jude) Okonkwo",
       title: "Lead Digital Marketing",
       bio: "Digital marketing strategist growing Tinzwave's presence and impact",
-      image: "/team-tochukwu.jpg",
+      image: "/team-ihionkhan.jpg",
     },
     {
       name: "Habeeb Oluwanishola",
       title: "Software Developer",
       bio: "Skilled developer building scalable applications for our clients",
-      image: "/team-habeeb.jpg",
+      image: "/habeeb.png",
     },
     {
       name: "Ajala Abdullah",
       title: "Software Developer",
       bio: "Passionate developer creating innovative solutions and systems",
-      image: "/team-jaala.jpg",
+      image: "/team-habeeb.jpg",
     },
   ]
 
