@@ -1,17 +1,18 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
-import "./globals.css"
+import type React from "react";
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import "./globals.css";
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const _geist = Geist({ subsets: ["latin"] });
+const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Tinzwave | Empowering Africa with Technology & Talent",
   description:
     "Transform your business with AI-powered software solutions, digital services, and world-class tech training. Tinzwave: Leading African tech education and innovation company.",
-  keywords: "AI software development, tech training, digital marketing, web development, mobile app, Nigeria, Lagos",
+  keywords:
+    "AI software development, tech training, digital marketing, web development, mobile app, Nigeria, Lagos",
   authors: [{ name: "Tinzwave Team" }],
   creator: "Tinzwave",
   publisher: "Tinzwave",
@@ -61,13 +62,13 @@ export const metadata: Metadata = {
     ],
     apple: "/tinzwave-icon.png",
   },
-    generator: 'v0.app'
-}
+  generator: "v0.app",
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -81,7 +82,8 @@ export default function RootLayout({
               name: "Tinzwave",
               url: "https://tinzwave.com",
               logo: "https://tinzwave.com/tinzwave-logo.png",
-              description: "AI-powered software solutions, digital services, and tech training company in Nigeria",
+              description:
+                "AI-powered software solutions, digital services, and tech training company in Nigeria",
               sameAs: [
                 "https://facebook.com/tinzwave",
                 "https://twitter.com/tinzwave",
@@ -104,13 +106,13 @@ export default function RootLayout({
             }),
           }}
         />
-        <meta name="theme-color" content="#001a4d" />
-        <meta name="msapplication-TileColor" content="#001a4d" />
+        <meta name="theme-color" content="#020617" />
+        <meta name="msapplication-TileColor" content="#020617" />
       </head>
       <body className={`font-sans antialiased`}>
         {children}
         <Analytics />
       </body>
     </html>
-  )
+  );
 }

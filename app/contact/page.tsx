@@ -73,7 +73,7 @@ export default function ContactPage() {
                           href="mailto:info@tinzwave.com"
                           className="text-muted-foreground hover:text-secondary transition-colors"
                         >
-                          info@tinzwave.com
+                          infor@tinzwave.com
                         </a>
                       </div>
                     </div>
@@ -175,7 +175,6 @@ export default function ContactPage() {
                     height="100%"
                     style={{ border: 0 }}
                     loading="lazy"
-                    allowFullScreen=""
                     referrerPolicy="no-referrer-when-downgrade"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.3234567!2d3.3521!3d6.5033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f7151234567890%3A0x1234567890abcdef!2sCr8tivebox%20Co-Working%20Space%2C%20E10%20Adeniran%20Ogunsanya%20St%2C%20Surulere%2C%20Lagos%20100001!5e0!3m2!1sen!2sng!4v1234567890123"
                   ></iframe>

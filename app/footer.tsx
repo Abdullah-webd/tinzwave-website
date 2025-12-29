@@ -1,7 +1,16 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react"
+import Link from "next/link";
+import Image from "next/image";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+} from "lucide-react";
 
 export function Footer() {
   return (
@@ -10,9 +19,18 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Tinzwave</h3>
+            <div className="mb-4">
+              <Image
+                src="/tinzwave-logo.png"
+                alt="Tinzwave logo"
+                width={160}
+                height={48}
+                className="h-auto w-auto"
+              />
+            </div>
             <p className="text-sm text-primary-foreground/80 leading-relaxed mb-4">
-              Empowering Africa with world-class technology solutions and digital skills training.
+              Empowering Africa with world-class technology solutions and
+              digital skills training.
             </p>
             <div className="flex gap-3">
               <a
@@ -59,7 +77,10 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <Link
+                  href="/"
+                  className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
                   Home
                 </Link>
               </li>
@@ -139,7 +160,7 @@ export function Footer() {
                   href="mailto:info@tinzwave.com"
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
-                  info@tinzwave.com
+                  infor@tinzwave.com
                 </a>
               </li>
               <li className="flex items-center gap-2">
@@ -153,7 +174,9 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />
-                <span className="text-primary-foreground/80">Lagos, Nigeria</span>
+                <span className="text-primary-foreground/80">
+                  Lagos, Nigeria
+                </span>
               </li>
             </ul>
           </div>
@@ -162,10 +185,11 @@ export function Footer() {
         {/* Divider */}
         <div className="border-t border-primary-foreground/20 pt-8">
           <p className="text-center text-sm text-primary-foreground/70">
-            &copy; {new Date().getFullYear()} Tinzwave. All rights reserved. | Empowering Africa with Technology
+            &copy; {new Date().getFullYear()} Tinzwave. All rights reserved. |
+            Empowering Africa with Technology
           </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
