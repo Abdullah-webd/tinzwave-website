@@ -100,18 +100,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-secondary text-secondary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Business?</h2>
-          <p className="text-lg mb-8 text-secondary-foreground/90 max-w-2xl mx-auto">
-            Let's discuss how our services can help you achieve your goals and stay ahead in the digital age.
-          </p>
-          <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-            <Link href="/contact">Get in Touch</Link>
-          </Button>
-        </div>
-      </section>
 
       <Footer />
     </div>

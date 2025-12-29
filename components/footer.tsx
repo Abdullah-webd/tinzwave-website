@@ -10,22 +10,62 @@ import {
   Twitter,
   Instagram,
   Linkedin,
+    Rocket
 } from "lucide-react";
+import Reveal from "@/components/Reveal";
+import { Button } from "@/components/ui/button";
 
 export function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-12">
+        {/* CTA */}
+        <section className="py-24 relative overflow-hidden bg-gradient-to-br from-primary to-primary">
+        <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10" />
+
+        <Reveal>
+          <div className="container mx-auto px-4 relative z-10 text-center">
+            <Rocket className="w-16 h-16 text-white mx-auto mb-6 animate-float" />
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Ready to Transform Africa?
+            </h2>
+            <p className="text-xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto leading-relaxed">
+              Join thousands of individuals and organizations building the
+              future through technology
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                asChild
+                size="lg"
+                className="bg-blue-900 text-white text-lg px-8 py-6 h-auto font-semibold "
+              >
+                <Link href="/contact">Get Started</Link>
+              </Button>
+              <Button
+                asChild
+                size="lg"
+                className="bg-blue-900 text-white text-lg px-8 py-6 h-auto font-semibold"
+              >
+                <Link href="/courses">Explore Courses</Link>
+              </Button>
+            </div>
+          </div>
+        </Reveal>
+      </section>
+
+        {/* Divider between CTA and footer content */}
+        <div className="border-t border-primary-foreground/20 mb-8" />
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div>
             <div className="mb-4">
               <Image
-                src="/logotinzwave.jpeg"
+                src="/logotinz.png"
                 alt="Tinzwave logo"
                 width={160}
                 height={48}
-                className="h-20 w-35 group-hover:scale-110 transition-transform duration-300"
+                className="h-10 w-35 group-hover:scale-110 transition-transform duration-300"
               />
             </div>
             <p className="text-sm text-primary-foreground/80 leading-relaxed mb-4">

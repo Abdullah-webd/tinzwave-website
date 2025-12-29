@@ -17,7 +17,6 @@ export const metadata: Metadata = {
   creator: "Tinzwave",
   publisher: "Tinzwave",
   robots: "index, follow",
-  canonical: "https://tinzwave.com",
   openGraph: {
     type: "website",
     locale: "en_NG",

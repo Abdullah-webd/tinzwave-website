@@ -122,4 +122,18 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Typing cursor animation used by TypingText component */
+  .animate-cursor {
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: currentColor;
+    animation: cursor 1s steps(2) infinite;
+  }
+
+  @keyframes cursor {
+    0% { border-color: currentColor; }
+    50% { border-color: transparent; }
+    100% { border-color: currentColor; }
+  }
 }
