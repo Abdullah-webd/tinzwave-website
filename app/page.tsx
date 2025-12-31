@@ -217,10 +217,10 @@ export default function HomePage() {
                 <Button
                   asChild
                   size="lg"
-                  className="bg-primary text-white text-lg px-8 py-6 h-auto font-semibold transition-all hover:scale-105 hover:shadow-lg"
+                  className="btn-animated border border-primary-foreground/60 text-primary-foreground bg-transparent text-lg px-8 py-6 h-auto font-semibold transition-all hover:bg-primary-foreground/5 hover:scale-105"
                 >
                   <Link href="/contact">
-                    <Rocket className="mr-2 h-5 w-5" />
+                    <Rocket className="mr-2 h-5 w-5 text-primary-foreground" />
                     Contact Us
                   </Link>
                 </Button>
@@ -492,7 +492,6 @@ export default function HomePage() {
           </Reveal>
         </div>
       </section>
-
 
       <Footer />
     </div>
